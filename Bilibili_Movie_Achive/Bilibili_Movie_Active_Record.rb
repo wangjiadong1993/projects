@@ -71,11 +71,11 @@ class Bilibili_Movie_Active_Record
 	end
 
 	def create_table_for_users_if_not_exist
-		puts 'start'
-		db.execute("CREATE TABLE IF NOT EXISTS " + DB_NAME+" (	id          INTEGER PRIMARY KEY,
+		puts db;
+		db.execute("CREATE TABLE IF NOT EXISTS " + DB_NAME+" (	id 			INTEGER PRIMARY KEY,
 																name 		VARCHAR(100), 
-																disc 	VARCHAR(100),
-																href 	INTEGER) ")
+																disc 		VARCHAR(100),
+																href 		INTEGER) ")
 	end
 end
 
